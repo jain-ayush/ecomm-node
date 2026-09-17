@@ -5,7 +5,7 @@ const productController = {
     getProduct: async (req, res) => {
         try {
             const response = await instance.get('https://dummyjson.com/products')
-            res.status(200).send({'message':'Product List','status':'success','data':response.data})
+            res.status(200).send({'message':'Product List new','status':'success','data':response.data})
         } catch (error) {            
            res.status(401).send({'message':'Error','status':'failed','error':error}) 
         }        
